@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "DotaHeroesInfo"
+include ':app'
+
+include ':core'
+include ':constants'
+include ':hero'
+include ':hero:hero-domain'
+include ':hero-datasource'
+include ':hero:hero-interactors'
+include ':hero:hero-datasource'
+include ':hero:ui-heroList'
+include ':components'
+include ':hero:ui-heroDetail'
+include ':hero:hero-datasource-test'
